@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Dmitry/Desktop/mud/lib/PicoSHA2/picosha2.h
+algorithm
+-
+cassert
+-
+iterator
+-
+sstream
+-
+vector
+-
+fstream
+-
+
+C:/Users/Dmitry/Desktop/mud/main.cpp
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+lib/PicoSHA2/picosha2.h
+C:/Users/Dmitry/Desktop/mud/lib/PicoSHA2/picosha2.h
+
