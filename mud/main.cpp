@@ -2,6 +2,7 @@
 // #include <functional>
 #include <string>
 #include <vector>
+#include <stdexcept>
 #include <fstream>
 //#include <experimental/filesystem> // https://www.boost.org/doc/libs/1_62_0/more/getting_started/windows.html    https://cmake.org/cmake/help/v3.15/module/FindBoost.html
 // #include <stdio.h>
@@ -35,8 +36,19 @@ string char_to_hex(unsigned char c) {
 }
 
 void mud_help() {
-    cout << "long long help................\n"
-            "very long"    << endl;
+    cout << "Welcome to the version control program!\n"
+            "The MUD program allows you to control file changes,\n"
+            "track its versions, return the file to earlier versions\n"
+            "and erase all information from absolutely all versions\n"
+            "of the file.\n\n"
+
+            "The following is a list of commands that will help you complete these steps.\n"
+            "mud help - help\n"
+            "mud update <filename> - file status record\n"
+            "mud history <filename> - file change history\n"
+            "mud undo <filename> [steps] - file rollback a few steps\n"
+            "mud redo <filename> [steps] - file return in several steps\n"
+            "mud clear <filename> - cleaning all file versions\n"    << endl;
     exit(0);
 }
 void print_history(string filename) {
@@ -53,8 +65,25 @@ void mud_update(string filename) {
 
 }
 
-int main(const int argc, const char *argv[]) {
+void copy_file(const std::string& src, const std::string& dst) {
+    std::ifstream in(src.c_str(), std::ios::binary);
+    if (!in) {
+        throw std::runtime_error("can`t open file: " + src);
+    }
+    std::ofstream out(dst.c_str(), std::ios::binary | std::ios::trunc);
+    if (!out) {
+        throw std::runtime_error("can`t create file: " + dst);
+    }
+    out << in.rdbuf();
+}
 
+int main(const int argc, const char *argv[]) {
+    try {
+        copy_file("..\\text.txt", "..\\copy\\test.txt");
+    } catch (const std::exception& e) {
+        std::cout << e.what() << std::endl;
+    }
+    
     string args[argc];
 
     for (int i = 0; i < argc; i++) {
@@ -82,7 +111,6 @@ int main(const int argc, const char *argv[]) {
         if (args[1] == "undo") {
 
         }
-
     }
 
 

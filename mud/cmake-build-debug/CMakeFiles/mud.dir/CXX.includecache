@@ -27,6 +27,8 @@ string
 -
 vector
 -
+stdexcept
+-
 fstream
 -
 lib/PicoSHA2/picosha2.h
