@@ -27,7 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="mud">
+    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,10 +63,6 @@
       <workItem from="1588445946813" duration="196000" />
       <workItem from="1588886618415" duration="163000" />
       <workItem from="1588889096284" duration="18000" />
-      <workItem from="1589229879478" duration="109000" />
-      <workItem from="1589230056901" duration="76000" />
-      <workItem from="1589731416503" duration="249000" />
-      <workItem from="1589743907080" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="mud">
       <created>1588445975435</created>
@@ -83,21 +78,7 @@
       <option name="project" value="LOCAL" />
       <updated>1588886670522</updated>
     </task>
-    <task id="LOCAL-00003" summary="mud">
-      <created>1589229962903</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1589229962903</updated>
-    </task>
-    <task id="LOCAL-00004" summary="mud">
-      <created>1589230124264</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1589230124264</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,37 +98,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="mud" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="669" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589744341900">
+    <state x="527" y="56" key="CommitChangelistDialog2" timestamp="1588886669650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589744341900" />
-    <state x="983" y="23" key="CommitChangelistDialog2" timestamp="1589744844632">
+    <state x="527" y="56" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588886669650" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588446013714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="983" y="23" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589744844632" />
-    <state x="1220" y="274" key="FileChooserDialogImpl" timestamp="1589744732744">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1220" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589744732744" />
-    <state x="869" y="146" key="SettingsEditor" timestamp="1589744720402">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="869" y="146" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589744720402" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589230126811">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589230126811" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589744088268">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589744088268" />
-    <state x="1096" y="235" key="run.anything.popup" timestamp="1589744900704">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1096" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589744900704" />
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1589744894711">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1103" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589744894711" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588446013714" />
   </component>
 </project>
