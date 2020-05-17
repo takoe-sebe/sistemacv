@@ -99,7 +99,7 @@ int main(const int argc, const char *argv[]) {
         if (args[1] == "history") {
             if (argc > 2) {
                 if (args[2] == "swan") {
-                    cout << "gaggagagagagaaga" << endl;
+                    cout << "gagagaggagagaggagagagagagaggaga" << endl;
                     return 0;
                 }
                 filename = args[2];

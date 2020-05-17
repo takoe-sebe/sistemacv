@@ -27,7 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="std:: -">
+    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="mud">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <workItem from="1589229879478" duration="109000" />
       <workItem from="1589230056901" duration="76000" />
       <workItem from="1589731416503" duration="249000" />
-      <workItem from="1589743907080" duration="2117000" />
+      <workItem from="1589743907080" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="mud">
       <created>1588445975435</created>
@@ -97,14 +97,7 @@
       <option name="project" value="LOCAL" />
       <updated>1589230124264</updated>
     </task>
-    <task id="LOCAL-00005" summary="std:: -">
-      <created>1589745455700</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1589745455700</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,18 +114,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mud" />
-    <MESSAGE value="std:: -" />
-    <option name="LAST_COMMIT_MESSAGE" value="std:: -" />
+    <option name="LAST_COMMIT_MESSAGE" value="mud" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589744341900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589744341900" />
-    <state x="983" y="23" key="CommitChangelistDialog2" timestamp="1589745693323">
+    <state x="983" y="23" key="CommitChangelistDialog2" timestamp="1589744844632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="983" y="23" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589745693323" />
+    <state x="983" y="23" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589744844632" />
     <state x="1220" y="274" key="FileChooserDialogImpl" timestamp="1589744732744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,18 +133,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="869" y="146" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589744720402" />
-    <state x="1287" y="432" key="VCS.ChangelistChooser" timestamp="1589745962925">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589230126811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1287" y="432" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589745962925" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589745474257">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589230126811" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589744088268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589745474257" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589745337233">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589745337233" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589744088268" />
     <state x="1096" y="235" key="run.anything.popup" timestamp="1589744900704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
