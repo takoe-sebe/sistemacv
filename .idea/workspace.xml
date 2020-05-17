@@ -28,7 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mud/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mud/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +53,6 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="" />
@@ -66,7 +63,6 @@
       <workItem from="1588445946813" duration="196000" />
       <workItem from="1588886618415" duration="163000" />
       <workItem from="1588889096284" duration="18000" />
-      <workItem from="1589744793546" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="mud">
       <created>1588445975435</created>
@@ -84,9 +80,6 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
