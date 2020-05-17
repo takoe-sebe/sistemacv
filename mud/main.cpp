@@ -65,14 +65,14 @@ void mud_update(string filename) {
 
 }
 
-void copy_file(const std::string& src, const std::string& dst) {
-    std::ifstream in(src.c_str(), std::ios::binary);
+void copy_file(const string& src, const string& dst) {
+    ifstream in(src.c_str(), ios::binary);
     if (!in) {
-        throw std::runtime_error("can`t open file: " + src);
+        throw runtime_error("can`t open file: " + src);
     }
-    std::ofstream out(dst.c_str(), std::ios::binary | std::ios::trunc);
+    ofstream out(dst.c_str(), ios::binary | ios::trunc);
     if (!out) {
-        throw std::runtime_error("can`t create file: " + dst);
+        throw runtime_error("can`t create file: " + dst);
     }
     out << in.rdbuf();
 }
@@ -80,8 +80,8 @@ void copy_file(const std::string& src, const std::string& dst) {
 int main(const int argc, const char *argv[]) {
     try {
         copy_file("..\\text.txt", "..\\copy\\test.txt");
-    } catch (const std::exception& e) {
-        std::cout << e.what() << std::endl;
+    } catch (const exception& e) {
+        cout << e.what() << endl;
     }
     
     string args[argc];
