@@ -4,7 +4,7 @@
 #include <vector>
 #include <stdexcept>
 #include <fstream>
-//#include <experimental/filesystem> // https://www.boost.org/doc/libs/1_62_0/more/getting_started/windows.html    https://cmake.org/cmake/help/v3.15/module/FindBoost.html
+//#include <experimental/filesystem> https://www.boost.org/doc/libs/1_62_0/more/getting_started/windows.html    https://cmake.org/cmake/help/v3.15/module/FindBoost.html
 // #include <stdio.h>
 #include "lib/PicoSHA2/picosha2.h" // https://github.com/okdshin/PicoSHA2
 #include <ctime>
@@ -78,22 +78,19 @@ void copy_file(const string& src, const string& dst) {
     out << in.rdbuf();
 }
 
-using namespace std;
-int main(int argc, const char** argv)
-{char buffer[80];
+int main(const int argc, const char *argv[]) {
+    char buffer[80];
     time_t seconds = time(NULL);
     tm* timeinfo = localtime(&seconds);
     char* format = "%A_%B%d_%Y_%I_%M_%S";
     strftime(buffer, 80, format, timeinfo);
     string a = buffer;
     try {
-        copy_file("..//text.txt", "..//copy// "+ a + ".txt");
-    } catch (const std::exception& e) {
-        std::cout << e.what() << std::endl;
+        copy_file("..\\text.txt", "..//copy// "+ a + ".txt");
+    } catch (const exception& e) {
+        cout << e.what() << endl;
     }
-    return 0;
-}
-
+    
     string args[argc];
 
     for (int i = 0; i < argc; i++) {
@@ -109,7 +106,7 @@ int main(int argc, const char** argv)
         if (args[1] == "history") {
             if (argc > 2) {
                 if (args[2] == "swan") {
-                    cout << "gagagaggagagaggagagagagagaggaga" << endl;
+                    cout << "gagaga" << endl;
                     return 0;
                 }
                 filename = args[2];
