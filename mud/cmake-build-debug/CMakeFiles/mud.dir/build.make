@@ -59,15 +59,15 @@ include CMakeFiles/mud.dir/flags.make
 CMakeFiles/mud.dir/main.cpp.obj: CMakeFiles/mud.dir/flags.make
 CMakeFiles/mud.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Dmitry\Desktop\mud\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mud.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mud.dir\main.cpp.obj -c C:\Users\Dmitry\Desktop\mud\main.cpp
+	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\mud.dir\main.cpp.obj -c C:\Users\Dmitry\Desktop\mud\main.cpp
 
 CMakeFiles/mud.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mud.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Dmitry\Desktop\mud\main.cpp > CMakeFiles\mud.dir\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Dmitry\Desktop\mud\main.cpp > CMakeFiles\mud.dir\main.cpp.i
 
 CMakeFiles/mud.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mud.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Dmitry\Desktop\mud\main.cpp -o CMakeFiles\mud.dir\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Dmitry\Desktop\mud\main.cpp -o CMakeFiles\mud.dir\main.cpp.s
 
 # Object files for target mud
 mud_OBJECTS = \

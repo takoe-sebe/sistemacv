@@ -1,11 +1,11 @@
 #include <iostream>
-// #include <functional>
+#include <functional>
 #include <string>
 #include <vector>
 #include <stdexcept>
+#include <filesystem>
 #include <fstream>
-//#include <experimental/filesystem> https://www.boost.org/doc/libs/1_62_0/more/getting_started/windows.html    https://cmake.org/cmake/help/v3.15/module/FindBoost.html
-// #include <stdio.h>
+#include <cstdio>
 #include "lib/PicoSHA2/picosha2.h" // https://github.com/okdshin/PicoSHA2
 #include <ctime>
 
@@ -52,7 +52,7 @@ void mud_help() {
             "mud clear <filename> - cleaning all file versions\n"    << endl;
     exit(0);
 }
-void print_history(string filename) {
+void print_hash(string filename) {
     cout << "file hash: ";
     string hash = hash_file(filename);
     for (int i = 0; i < hash.size(); i++) {
@@ -104,14 +104,14 @@ int main(const int argc, const char *argv[]) {
             mud_help();
         }
         if (args[1] == "history") {
+//            mud_history();
             if (argc > 2) {
-                if (args[2] == "swan") {
-                    cout << "gagaga" << endl;
+                if (args[2] == "hash") {
+                    filename = args[2];
+                    print_hash(filename);
                     return 0;
                 }
-                filename = args[2];
-                print_history(filename);
-                return 0;
+
             }
 
         }
