@@ -27,7 +27,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="" />
+    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mud/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CMakeRCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/CMakeFiles/mud.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/mud.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/mud.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/mud.exe" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/mud.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mud/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +87,7 @@
       <workItem from="1589916026703" duration="18000" />
       <workItem from="1590148635712" duration="65000" />
       <workItem from="1590149158182" duration="610000" />
-      <workItem from="1590159494994" duration="721000" />
+      <workItem from="1590159494994" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="mud">
       <created>1588445975435</created>
@@ -88,14 +110,7 @@
       <option name="project" value="LOCAL" />
       <updated>1589748093357</updated>
     </task>
-    <task id="LOCAL-00004" summary="...">
-      <created>1590161033699</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1590161033700</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,22 +128,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mud" />
     <MESSAGE value="fixed" />
-    <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="56" key="CommitChangelistDialog2" timestamp="1590161031293">
+    <state x="527" y="56" key="CommitChangelistDialog2" timestamp="1589748092412">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="56" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590161031293" />
+    <state x="527" y="56" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589748092412" />
     <state x="126" y="54" key="DiffContextDialog" timestamp="1589748064432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="126" y="54" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589748064432" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590161041386">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589748108614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590161041386" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589748108614" />
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589746842393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
