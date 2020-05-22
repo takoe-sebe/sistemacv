@@ -8,6 +8,8 @@
 #include <cstdio>
 #include "lib/PicoSHA2/picosha2.h" // https://github.com/okdshin/PicoSHA2
 #include <ctime>
+#include <cstdlib>
+#include <windows.h>
 
 using namespace std;
 
@@ -53,7 +55,7 @@ void mud_help() {
     exit(0);
 }
 
-bool mud_clear(){
+void mud_clear(){
     filesystem::path pathToDelete("..\\copy");
     remove_all(pathToDelete);
     cout << "You have cleared all file versions "  << endl;
@@ -72,6 +74,20 @@ void print_hash(string filename) {
 
 void mud_update(string filename) {
 
+}
+
+void mud_history(){
+    WIN32_FIND_DATA FindFileData;
+    HANDLE hf;
+    hf=FindFirstFile("..\\copy\\*", &FindFileData);
+    if (hf!=INVALID_HANDLE_VALUE)
+{
+        do{
+            cout << FindFileData.cFileName << endl;
+}
+    while (FindNextFile(hf,&FindFileData)!=0);
+    FindClose(hf);
+}
 }
 
 void copy_file(const string& src, const string& dst) {
@@ -118,7 +134,10 @@ int main(const int argc, const char *argv[]) {
             return 0;
         }
         if (args[1] == "history") {
-//            mud_history();
+            mud_history();
+            return 0;
+        }
+        if (args[1] == "history") {
             if (argc > 2) {
                 if (args[2] == "hash") {
                     filename = args[2];
