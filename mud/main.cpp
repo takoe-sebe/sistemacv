@@ -52,6 +52,14 @@ void mud_help() {
             "mud clear <filename> - cleaning all file versions\n"    << endl;
     exit(0);
 }
+
+bool mud_clear(){
+    filesystem::path pathToDelete("..\\copy");
+    remove_all(pathToDelete);
+    cout << "You have cleared all file versions "  << endl;
+}
+
+
 void print_hash(string filename) {
     cout << "file hash: ";
     string hash = hash_file(filename);
@@ -67,6 +75,8 @@ void mud_update(string filename) {
 }
 
 void copy_file(const string& src, const string& dst) {
+    filesystem::path pathToCreat("..\\copy");
+    create_directory(pathToCreat);
     ifstream in(src.c_str(), ios::binary);
     if (!in) {
         throw runtime_error("can`t open file: " + src);
@@ -102,6 +112,10 @@ int main(const int argc, const char *argv[]) {
     if (argc > 1) {
         if (args[1] == "help") {
             mud_help();
+        }
+        if (args[1] == "clear") {
+            mud_clear();
+            return 0;
         }
         if (args[1] == "history") {
 //            mud_history();
