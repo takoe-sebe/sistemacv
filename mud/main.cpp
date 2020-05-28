@@ -54,6 +54,30 @@ void mud_help() {
             "mud clear <filename> - cleaning all file versions\n"    << endl;
     exit(0);
 }
+void mud_mda() {
+    cout <<
+    ".........................__.\n"
+    "................,-~*`¯lllllll`*~,\n"
+    "..........,-~*`lllllllllllllllllllllll`*-,\n"
+    ".....,-~*lllllllllllllllllllllllllllllllll*-,\n"
+    "..,-*llllllllllllllllllllllllllllllllllllllll.\\.\n"
+    ";*`lllllllllllllllllllllllllll,-~*~-,llllllllll\\\n"
+    ".\\llllllllllllllllllllllll/.........\\;;;;lllll,-`~-,\n"
+    "..\\llllllllllllllllll,-*...........`~-~-,...(.(`*,`,\n"
+    "...\\lllllllll,-~*.....................)_-\\..*`*;..)\n"
+    "....\\,-*`¯,*`)............,-~*`~................/\n"
+    ".....|/.../.../~,......-~*,-~*`;................/.\\\n"
+    "..../.../.../.../..,-,..*~,.`*~*................*...\\.\n"
+    "...|.../.../.../.*`...\\...........................)....)`~,\n"
+    "...|./.../..../.......)......,.)`*~-,............/....|..)...`~-,.\n"
+    ".././.../...,*`-,.....`-,...*`....,---......\\..../...../..|.........```*~-,,,,\n"
+    "..(..........)`*~-,....`*`.,-~*.,-*......|.../..../.../............\\........\n"
+    "...*-,.......`*-,...`~,..``.,,,-*..........|.,*...,*...|..............\\........\n"
+    "......*,.........`-,...)-,..............,-*`...,-*....(`-,............\\.......\n"
+    ".........f`-,.........`-,/...*-,___,,-~*....,-*......|...`-,..........\\........"
+    << endl;
+    exit(0);
+}
 
 void mud_clear(){
     filesystem::path pathToDelete("..\\copy");
@@ -133,6 +157,10 @@ int main(const int argc, const char *argv[]) {
             mud_clear();
             return 0;
         }
+        if (args[1] == "path") {
+            mud_path();
+            return 0;
+        }
         if (args[1] == "history") {
             mud_history();
             return 0;
@@ -154,6 +182,6 @@ int main(const int argc, const char *argv[]) {
     }
 
 
-    mud_help();
+    mud_mda();
     return 0;
 }
