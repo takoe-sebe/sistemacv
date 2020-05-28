@@ -4,24 +4,16 @@
 #include <vector>
 #include <stdexcept>
 #include <filesystem>
-#include <fstream>
 #include <cstdio>
 #include "lib/PicoSHA2/picosha2.h" // https://github.com/okdshin/PicoSHA2
 #include <ctime>
-#include <cstdlib>
 #include <windows.h>
 
 using namespace std;
 
-bool file_exists(string filename){
-    ifstream file;
-    file.open(filename);
-    bool result = file.is_open();
-    file.close();
-    return result;
-}
+string filename;
 
-string hash_file(string filename) {
+string hash_file() {
     ifstream f(filename, ios::binary);
     vector<unsigned char> s(picosha2::k_digest_size);
     picosha2::hash256(f, s.begin(), s.end());
@@ -56,26 +48,28 @@ void mud_help() {
 }
 void mud_mda() {
     cout <<
-    ".........................__.\n"
-    "................,-~*`¯lllllll`*~,\n"
-    "..........,-~*`lllllllllllllllllllllll`*-,\n"
-    ".....,-~*lllllllllllllllllllllllllllllllll*-,\n"
-    "..,-*llllllllllllllllllllllllllllllllllllllll.\\.\n"
-    ";*`lllllllllllllllllllllllllll,-~*~-,llllllllll\\\n"
-    ".\\llllllllllllllllllllllll/.........\\;;;;lllll,-`~-,\n"
-    "..\\llllllllllllllllll,-*...........`~-~-,...(.(`*,`,\n"
-    "...\\lllllllll,-~*.....................)_-\\..*`*;..)\n"
-    "....\\,-*`¯,*`)............,-~*`~................/\n"
-    ".....|/.../.../~,......-~*,-~*`;................/.\\\n"
-    "..../.../.../.../..,-,..*~,.`*~*................*...\\.\n"
-    "...|.../.../.../.*`...\\...........................)....)`~,\n"
-    "...|./.../..../.......)......,.)`*~-,............/....|..)...`~-,.\n"
-    ".././.../...,*`-,.....`-,...*`....,---......\\..../...../..|.........```*~-,,,,\n"
-    "..(..........)`*~-,....`*`.,-~*.,-*......|.../..../.../............\\........\n"
-    "...*-,.......`*-,...`~,..``.,,,-*..........|.,*...,*...|..............\\........\n"
-    "......*,.........`-,...)-,..............,-*`...,-*....(`-,............\\.......\n"
-    ".........f`-,.........`-,/...*-,___,,-~*....,-*......|...`-,..........\\........"
-    << endl;
+         ".........................__.\n"
+         "................,-~*`?lllllll`*~,\n"
+         "..........,-~*`lllllllllllllllllllllll`*-,\n"
+         ".....,-~*lllllllllllllllllllllllllllllllll*-,\n"
+         "..,-*llllllllllllllllllllllllllllllllllllllll.\\.\n"
+         ";*`lllllllllllllllllllllllllll,-~*~-,llllllllll\\\n"
+         ".\\llllllllllllllllllllllll/.........\\;;;;lllll,-`~-,\n"
+         "..\\llllllllllllllllll,-*...........`~-~-,...(.(`*,`,\n"
+         "...\\lllllllll,-~*.....................)_-\\..*`*;..)\n"
+         "....\\,-*`?,*`)............,-~*`~................/\n"
+         ".....|/.../.../~,......-~*,-~*`;................/.\\\n"
+         "..../.../.../.../..,-,..*~,.`*~*................*...\\.\n"
+         "...|.../.../.../.*`...\\...........................)....)`~,\n"
+         "...|./.../..../.......)......,.)`*~-,............/....|..)...`~-,.\n"
+         ".././.../...,*`-,.....`-,...*`....,---......\\..../...../..|.........```*~-,,,,\n"
+         "..(..........)`*~-,....`*`.,-~*.,-*......|.../..../.../............\\........\n"
+         "...*-,.......`*-,...`~,..``.,,,-*..........|.,*...,*...|..............\\........\n"
+         "......*,.........`-,...)-,..............,-*`...,-*....(`-,............\\.......\n"
+         ".........f`-,.........`-,/...*-,___,,-~*....,-*......|...`-,..........\\........\n \n"
+
+         "Please try \"mud help\""
+         << endl;
     exit(0);
 }
 
@@ -85,10 +79,9 @@ void mud_clear(){
     cout << "You have cleared all file versions "  << endl;
 }
 
-
-void print_hash(string filename) {
+void print_hash() {
     cout << "file hash: ";
-    string hash = hash_file(filename);
+    string hash = hash_file();
     for (int i = 0; i < hash.size(); i++) {
         cout << char_to_hex(hash[i]);
     }
@@ -96,22 +89,18 @@ void print_hash(string filename) {
     cout << "Printing history of " << filename << endl;
 }
 
-void mud_update(string filename) {
-
-}
-
 void mud_history(){
     WIN32_FIND_DATA FindFileData;
     HANDLE hf;
     hf=FindFirstFile("..\\copy\\*", &FindFileData);
     if (hf!=INVALID_HANDLE_VALUE)
-{
+    {
         do{
             cout << FindFileData.cFileName << endl;
-}
-    while (FindNextFile(hf,&FindFileData)!=0);
-    FindClose(hf);
-}
+        }
+        while (FindNextFile(hf,&FindFileData)!=0);
+        FindClose(hf);
+    }
 }
 
 void copy_file(const string& src, const string& dst) {
@@ -128,26 +117,54 @@ void copy_file(const string& src, const string& dst) {
     out << in.rdbuf();
 }
 
+string convert(char* a, int size) {
+    string s(a);
+    return s;
+}
+
+void mud_path(){
+    int size=0;
+    FILE *F;
+    char cfg_buff[300];
+
+    int i=0;
+    memset(&cfg_buff, 0, sizeof(cfg_buff));
+
+    if((F = fopen("config.txt", "rb")) == NULL)
+        cout << "ERROR" << endl;
+
+    while(1)
+    {
+        int ch = fgetc(F);
+        if(ch == EOF)
+        {size=i+1; break;}
+        cfg_buff[i] = ch;
+        i++;
+    }
+    fclose(F);
+    filename = convert(cfg_buff, (size/sizeof(char)));
+}
+
 int main(const int argc, const char *argv[]) {
     char buffer[80];
+    mud_path();
     time_t seconds = time(NULL);
     tm* timeinfo = localtime(&seconds);
     char* format = "%A_%B%d_%Y_%I_%M_%S";
     strftime(buffer, 80, format, timeinfo);
     string a = buffer;
     try {
-        copy_file("..\\text.txt", "..//copy// "+ a + ".txt");
+        string var = "..//copy// "+ a + ".txt";
+        copy_file(filename, var);
     } catch (const exception& e) {
         cout << e.what() << endl;
     }
-    
+
     string args[argc];
 
     for (int i = 0; i < argc; i++) {
         args[i] = argv[i];
     }
-
-    string filename = "..\\text.txt";
 
     if (argc > 1) {
         if (args[1] == "help") {
@@ -158,7 +175,8 @@ int main(const int argc, const char *argv[]) {
             return 0;
         }
         if (args[1] == "path") {
-            mud_path();
+            cout << "You can change the path to your file in \"config\"\n"
+                    "Please, before changing the file path, clear all versions of your file using \"mud clear\"" << endl;
             return 0;
         }
         if (args[1] == "history") {
@@ -169,18 +187,14 @@ int main(const int argc, const char *argv[]) {
             if (argc > 2) {
                 if (args[2] == "hash") {
                     filename = args[2];
-                    print_hash(filename);
+                    print_hash();
                     return 0;
                 }
 
             }
 
         }
-        if (args[1] == "undo") {
-
-        }
     }
-
 
     mud_mda();
     return 0;
