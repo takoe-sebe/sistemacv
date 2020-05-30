@@ -27,7 +27,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="clear all file versions" />
+    <list default="true" id="cb7787ba-3f58-4545-80d7-90586b51c214" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mud/cmake-build-debug/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/cmake-build-debug/mud.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mud/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mud/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +45,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bMdYk92VrehN9m9jzgHc7xVskY" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +57,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/философия/mud" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,11 +78,7 @@
       <workItem from="1588445946813" duration="196000" />
       <workItem from="1588886618415" duration="163000" />
       <workItem from="1588889096284" duration="18000" />
-      <workItem from="1589747925995" duration="198000" />
-      <workItem from="1589916026703" duration="18000" />
-      <workItem from="1590148635712" duration="65000" />
-      <workItem from="1590149158182" duration="610000" />
-      <workItem from="1590159494994" duration="603000" />
+      <workItem from="1590829715505" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="mud">
       <created>1588445975435</created>
@@ -81,22 +94,11 @@
       <option name="project" value="LOCAL" />
       <updated>1588886670522</updated>
     </task>
-    <task id="LOCAL-00003" summary="fixed">
-      <created>1589748093357</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1589748093357</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Revert &quot;...&quot;&#10;&#10;This reverts commit 1354540c">
-      <created>1590176143063</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1590176143063</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -112,23 +114,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mud" />
-    <MESSAGE value="fixed" />
-    <MESSAGE value="Revert &quot;...&quot;&#10;&#10;This reverts commit 1354540c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;...&quot;&#10;&#10;This reverts commit 1354540c" />
+    <option name="LAST_COMMIT_MESSAGE" value="mud" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="56" key="CommitChangelistDialog2" timestamp="1590176142566">
+    <state x="527" y="56" key="CommitChangelistDialog2" timestamp="1588886669650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="56" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590176142566" />
-    <state x="126" y="54" key="DiffContextDialog" timestamp="1589748064432">
+    <state x="527" y="56" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588886669650" />
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1590183080617">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1590183080617" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588446013714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="54" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589748064432" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589748108614">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589748108614" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588446013714" />
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589746842393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
